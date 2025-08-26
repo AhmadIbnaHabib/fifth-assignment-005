@@ -5,15 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Service</title>
+    <!-- favicon Link -->
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-    <!-- tailwind + daisyUI cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- tailwind CSS cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="max-w-[1460px] mx-auto">
     <header>
-
+        <section class="flex justify-between ">
+            <nav class="flex items-center mt-[25px] mb-[25px]">
+                <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="">
+                <h1 class="text-[#006747] text-xl font-extrabold ml-3 mb-0">Emergency<br>Service</h1>
+            </nav>
+            <nav class="flex items-center gap-5 mt-[24px] mb-[24px]">
+                <button class="flex items-center justify-center bg-[#41ff6b1a] w-[123px] h-[52px] rounded-[50px] inter text-lg font-bold">0 <img class="w-[30px] h-[30px] ml-[5px]" src="./assets/heart.png" alt=""></button>
+                <button class="flex items-center justify-center bg-[#41ff6b1a] w-[106px] h-[52px] rounded-[50px] inter text-base font-bold">100 <img class="w-6 h-6 ml-[5px]" src="./assets/coin.png" alt=""></button>
+                <button class="bg-[#00A63E] text-white w-[127px] h-[52px] rounded-[50px] text-base font-semibold">2 Copy</button>
+            </nav>
+        </section>
     </header>
     <main>
 
