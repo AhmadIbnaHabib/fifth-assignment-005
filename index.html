@@ -20,8 +20,8 @@
 
 <body class="bg-[#f5fff6]">
     <header>
-        <section class="flex justify-between ml-[60px] ">
-            <nav class="flex items-center mt-[25px] mb-[25px]">
+        <section class="flex justify-between ml-[60px] flex-col sm:flex-row items-center px-4">
+            <nav class=" nav-img flex items-center mt-[25px] mb-[25px]">
                 <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="">
                 <h1 class="text-[#006747] text-xl font-extrabold ml-3 mb-0">Emergency<br>Service</h1>
             </nav>
@@ -33,27 +33,28 @@
                     class="flex items-center justify-center text-[#000000] bg-[#41ff6b1a] w-[106px] h-[52px] rounded-[50px] inter text-base font-bold hover:cursor-pointer">100
                     <img class="w-6 h-6 ml-[5px]" src="./assets/coin.png" alt=""></button>
                 <button
-                    class="bg-[#00A63E] text-white w-[127px] h-[52px] inter rounded-[50px] text-base font-semibold hover:cursor-pointer">2
+                    class="bg-[#00A63E] text-white w-[127px] h-[52px] inter rounded-[50px] text-base font-semibold hover:cursor-pointer">3
                     Copy</button>
             </nav>
         </section>
         <section
-            class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full max-w-[1920px] mx-auto h-[239px] text-center">
+            class=" nav-banner bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full max-w-[1920px] mx-auto h-[239px] text-center sm:h-[239px]">
             <img class="w-[92px] h-[92px] inline-block mt-[21px]" src="./assets/logo-dark.png" alt="">
             <h1 class="font-bold text-[40px] hind-madurai-light text-white mt-[11px]">Emergency Service Directory</h1>
-            <p class="font-semibold text-xl hind-madurai-light text-white mt-[11px]">Government Emergency Services at
+            <p class="font-semibold text-xl hind-madurai-light text-white mt-[11px] hidden sm:block">Government
+                Emergency Services at
                 Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
         </section>
     </header>
     <!-- card main section -->
-    <main class="flex justify-center mt-[48px] gap-8 mb-[86px]">
-        <section  class="grid grid-cols-3 gap-8">
-            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8">
+    <main class="aside-card flex justify-center mt-[48px] gap-8 mb-[86px]">
+        <section class="grid gap-8 grid-cols-1 sm:grid-cols-3">
+            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8 card">
                 <div class="flex justify-between">
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
                         <img class="w-8 h-8" src="./assets/emergency.png" alt="">
                     </figure>
-                    <button class="text-xl text-[#993c3c] hover:cursor-pointer"><i
+                    <button class="text-xl text-[#404040] hover:cursor-pointer"><i
                             class="fa-regular fa-heart"></i></button>
                 </div>
                 <h1 class="font-bold text-2xl mt-4">National Emergency Number</h1>
@@ -63,13 +64,14 @@
                     class="font-normal text-lg w-[53px] h-[37px] bg-[#F2F2F2] rounded-[9999px] mt-[2px] hover:cursor-pointer">All</button>
                 <div class="flex justify-between mt-[18px]">
                     <button
-                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer"><i
+                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer card-btn"><i
                             class="fa-regular fa-copy mr-[5px]"></i>Copy</button>
-                    <button class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer"><i
+                    <button
+                        class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer card-btn"><i
                             class="fa-solid fa-phone mr-[5px]"></i>Call</button>
                 </div>
             </section>
-            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8">
+            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8 card">
                 <div class="flex justify-between">
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
                         <img class="w-8 h-8" src="./assets/police.png" alt="">
@@ -84,13 +86,14 @@
                     class="font-normal text-lg w-[79px] h-[37px] bg-[#F2F2F2] rounded-[9999px] mt-[2px] hover:cursor-pointer">Police</button>
                 <div class="flex justify-between mt-[18px]">
                     <button
-                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer"><i
+                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer card-btn"><i
                             class="fa-regular fa-copy mr-[5px]"></i>Copy</button>
-                    <button class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer"><i
+                    <button
+                        class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer card-btn"><i
                             class="fa-solid fa-phone mr-[5px]"></i>Call</button>
                 </div>
             </section>
-            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8">
+            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8 card">
                 <div class="flex justify-between">
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
                         <img class="w-8 h-8" src="./assets/fire-service.png" alt="">
@@ -105,13 +108,14 @@
                     class="font-normal text-lg w-[61px] h-[37px] bg-[#F2F2F2] rounded-[9999px] mt-[2px] hover:cursor-pointer">Fire</button>
                 <div class="flex justify-between mt-[18px]">
                     <button
-                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer"><i
+                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer card-btn"><i
                             class="fa-regular fa-copy mr-[5px]"></i>Copy</button>
-                    <button class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer"><i
+                    <button
+                        class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer card-btn"><i
                             class="fa-solid fa-phone mr-[5px]"></i>Call</button>
                 </div>
             </section>
-            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8">
+            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8 card">
                 <div class="flex justify-between">
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
                         <img class="w-8 h-8" src="./assets/ambulance.png" alt="">
@@ -126,13 +130,14 @@
                     class="font-normal text-lg w-[83px] h-[37px] bg-[#F2F2F2] rounded-[9999px] mt-[2px] hover:cursor-pointer">Health</button>
                 <div class="flex justify-between mt-[18px]">
                     <button
-                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer"><i
+                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer card-btn"><i
                             class="fa-regular fa-copy mr-[5px]"></i>Copy</button>
-                    <button class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer"><i
+                    <button
+                        class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer card-btn"><i
                             class="fa-solid fa-phone mr-[5px]"></i>Call</button>
                 </div>
             </section>
-            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8">
+            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8 card">
                 <div class="flex justify-between">
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
                         <img class="w-8 h-8" src="./assets/emergency.png" alt="">
@@ -147,13 +152,14 @@
                     class="font-normal text-lg w-[68px] h-[37px] bg-[#F2F2F2] rounded-[9999px] mt-[2px] hover:cursor-pointer">Help</button>
                 <div class="flex justify-between mt-[18px]">
                     <button
-                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer"><i
+                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer card-btn"><i
                             class="fa-regular fa-copy mr-[5px]"></i>Copy</button>
-                    <button class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer"><i
+                    <button
+                        class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer card-btn"><i
                             class="fa-solid fa-phone mr-[5px]"></i>Call</button>
                 </div>
             </section>
-            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8">
+            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8 card">
                 <div class="flex justify-between">
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
                         <img class="w-8 h-8" src="./assets/emergency.png" alt="">
@@ -168,13 +174,14 @@
                     class="font-normal text-lg w-[73px] h-[37px] bg-[#F2F2F2] rounded-[9999px] mt-[2px] hover:cursor-pointer">Govt.</button>
                 <div class="flex justify-between mt-[18px]">
                     <button
-                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer"><i
+                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer card-btn"><i
                             class="fa-regular fa-copy mr-[5px]"></i>Copy</button>
-                    <button class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer"><i
+                    <button
+                        class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer card-btn"><i
                             class="fa-solid fa-phone mr-[5px]"></i>Call</button>
                 </div>
             </section>
-            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8">
+            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8 card">
                 <div class="flex justify-between">
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
                         <img class="w-8 h-8" src="./assets/emergency.png" alt="">
@@ -189,13 +196,14 @@
                     class="font-normal text-lg w-[109px] h-[37px] bg-[#F2F2F2] rounded-[9999px] mt-[2px] hover:cursor-pointer">Electricity</button>
                 <div class="flex justify-between mt-[18px]">
                     <button
-                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer"><i
+                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer card-btn"><i
                             class="fa-regular fa-copy mr-[5px]"></i>Copy</button>
-                    <button class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer"><i
+                    <button
+                        class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer card-btn"><i
                             class="fa-solid fa-phone mr-[5px]"></i>Call</button>
                 </div>
             </section>
-            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8">
+            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8 card">
                 <div class="flex justify-between">
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
                         <img class="w-8 h-8" src="./assets/emergency.png" alt="">
@@ -210,13 +218,14 @@
                     class="font-normal text-lg w-[69px] h-[37px] bg-[#F2F2F2] rounded-[9999px] mt-[2px] hover:cursor-pointer">NGO</button>
                 <div class="flex justify-between mt-[18px]">
                     <button
-                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer"><i
+                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer card-btn"><i
                             class="fa-regular fa-copy mr-[5px]"></i>Copy</button>
-                    <button class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer"><i
+                    <button
+                        class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer card-btn"><i
                             class="fa-solid fa-phone mr-[5px]"></i>Call</button>
                 </div>
             </section>
-            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8">
+            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8 card">
                 <div class="flex justify-between">
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
                         <img class="w-8 h-8" src="./assets/emergency.png" alt="">
@@ -231,9 +240,10 @@
                     class="font-normal text-lg w-[79px] h-[37px] bg-[#F2F2F2] rounded-[9999px] mt-[2px] hover:cursor-pointer">Travel</button>
                 <div class="flex justify-between mt-[18px]">
                     <button
-                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer"><i
+                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer card-btn"><i
                             class="fa-regular fa-copy mr-[5px]"></i>Copy</button>
-                    <button class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer"><i
+                    <button
+                        class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer card-btn"><i
                             class="fa-solid fa-phone mr-[5px]"></i>Call</button>
                 </div>
             </section>
@@ -301,9 +311,15 @@
             </section>
         </aside>
     </main>
-    <footer class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full max-w-[1920px] mx-auto h-[86px] text-center">
+    <footer
+        class=" by bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full max-w-[1920px] mx-auto h-[86px] text-center">
         <section class="">
-            <h1 class="flex justify-center items-center text-white font-bold text-xl pt-8 hind-madurai-light">© 2025 Emergency Service. All Rights Reserved. |<a class="ml-1" target="_blank" href="https://github.com/AhmadIbnaHabib">Developed by Ahmad Ibna Habib</a></h1>
+            <h1 class=" name flex justify-center items-center text-white font-bold text-xl pt-8 hind-madurai-light">
+                <span class="top-left">© 2025 Emergency Service.All Rights Reserved.</span><span
+                    class="pipe ml-1">|</span><a class="ml-1" target="_blank"
+                    href="https://github.com/AhmadIbnaHabib"><span class="right-bottom">Developed by Ahmad Ibna
+                        Habib</span></a>
+            </h1>
         </section>
     </footer>
     <!-- JavaScript SRC -->

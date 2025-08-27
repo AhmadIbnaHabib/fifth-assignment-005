@@ -16,3 +16,35 @@
 .roboto {
   font-family: "Roboto", sans-serif;
 }
+
+@media (max-width: 640px) {
+    .nav-img {
+        margin-right: 325px;
+    }
+    .nav-banner{ 
+      margin-bottom: 30px;
+    }
+    .card {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .card-btn{
+      width: 160px;
+    }
+    .aside-card{
+      flex-direction: column;
+      width: 400px;
+      margin: 0 auto;
+    }
+    .by{
+      margin-top: 30px;
+      height: 100px;
+    }
+    .name{
+      font-size: 14px;
+      padding-right: 5px;
+    }
+    .pipe{
+      display: none;
+    }
+}
