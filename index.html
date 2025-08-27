@@ -16,8 +16,9 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<!-- navbar and banner section -->
 
-<body class="">
+<body class="bg-[#f5fff6]">
     <header>
         <section class="flex justify-between ml-[60px] ">
             <nav class="flex items-center mt-[25px] mb-[25px]">
@@ -26,29 +27,112 @@
             </nav>
             <nav class="flex items-center gap-5 mt-[24px] mr-[60px] mb-[24px]">
                 <button
-                    class="flex items-center justify-center bg-[#41ff6b1a] w-[123px] h-[52px] rounded-[50px] inter text-lg font-bold hover:cursor-pointer">0
+                    class="flex items-center justify-center text-[#000000] bg-[#41ff6b1a] w-[123px] h-[52px] rounded-[50px] inter text-base font-bold hover:cursor-pointer">0
                     <img class="w-[30px] h-[30px] ml-[5px]" src="./assets/heart.png" alt=""></button>
                 <button
-                    class="flex items-center justify-center bg-[#41ff6b1a] w-[106px] h-[52px] rounded-[50px] inter text-base font-bold hover:cursor-pointer">100
+                    class="flex items-center justify-center text-[#000000] bg-[#41ff6b1a] w-[106px] h-[52px] rounded-[50px] inter text-base font-bold hover:cursor-pointer">100
                     <img class="w-6 h-6 ml-[5px]" src="./assets/coin.png" alt=""></button>
                 <button
-                    class="bg-[#00A63E] text-white w-[127px] h-[52px] rounded-[50px] text-base font-semibold hover:cursor-pointer">2
+                    class="bg-[#00A63E] text-white w-[127px] h-[52px] inter rounded-[50px] text-base font-semibold hover:cursor-pointer">2
                     Copy</button>
             </nav>
         </section>
-        <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full max-w-[1920px] mx-auto h-[239px] text-center mb-[48px]">
+        <section
+            class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full max-w-[1920px] mx-auto h-[239px] text-center mb-[48px]">
             <img class="w-[92px] h-[92px] inline-block mt-[21px]" src="./assets/logo-dark.png" alt="">
-            <h1 class="font-bold text-4xl hind-madurai-light text-white mt-[15px]">Emergency Service Directory</h1>
-            <p class="font-semibold text-sm hind-madurai-light text-white mt-[15px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            <h1 class="font-bold text-[40px] hind-madurai-light text-white mt-[11px]">Emergency Service Directory</h1>
+            <p class="font-semibold text-xl hind-madurai-light text-white mt-[11px]">Government Emergency Services at
+                Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
         </section>
     </header>
-    <main>
-
+    <!-- card main section -->
+    <main class="max-w-[1800px] mx-auto">
+        <section>
+            <section class="w-[436px] h-[360px] bg-white rounded-xl shadow-sm p-8">
+                <div class="flex justify-between">
+                    <figure class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
+                        <img class="w-8 h-8" src="./assets/emergency.png" alt="">
+                    </figure>
+                    <button class="text-xl text-[#404040] hover:cursor-pointer"><i
+                            class="fa-regular fa-heart"></i></button>
+                </div>
+                <h1 class="font-bold text-2xl mt-4">National Emergency Number</h1>
+                <p class="font-normal text-lg mt-[2px] text-[#5C5C5C]">National Emergency</p>
+                <h1 class="text-[#111111] font-bold text-[32px] roboto mt-[18px]">999</h1>
+                <button
+                    class="font-normal text-lg w-[53px] h-[37px] bg-[#F2F2F2] rounded-[9999px] mt-[2px] hover:cursor-pointer">All</button>
+                <div class="flex justify-between mt-[18px]">
+                    <button
+                        class="w-[181px] h-[40px] border border-[#d4d6d5] rounded-[8px] text-[#5C5C5C] hover:cursor-pointer"><i
+                            class="fa-regular fa-copy mr-[5px]"></i>Copy</button>
+                    <button class="w-[181px] h-[40px] bg-[#00A63E] rounded-[8px] text-white hover:cursor-pointer"><i
+                            class="fa-solid fa-phone mr-[5px]"></i>Call</button>
+                </div>
+            </section>
+        </section>
+        <!-- aside main section -->
+        <aside>
+            <section class="w-[400px] h-[1140px] mt-[48px] bg-white shadow-sm rounded-[12px]">
+                <section class="flex justify-between p-[24px]">
+                    <div class="flex items-center">
+                        <button><i class="fa-solid fa-clock-rotate-left text-[#5C5C5C] mr-[5px]"></i></button>
+                        <p class="font-medium">Call History</p>
+                    </div>
+                    <div>
+                        <button
+                            class="w-[114px] h-[52px] bg-[#00A63E] text-white rounded-[50px] font-medium hover:cursor-pointer">Clear</button>
+                </section>
+                <aside class="flex justify-between p-[24px] items-center w-[380px] h-[83px] bg-[#FAFAFA] mx-auto rounded-[8px] mb-[8px]">
+                    <div class="">
+                        <h1 class="inter font-semibold text-[18px]">Fire Service Number</h1>
+                        <p class="hind-madurai-light font-medium text-[18px] text-[#5C5C5C]">999</p>
+                    </div>
+                    <div class="hind-madurai-light font-medium text-[18px]">11:36:58 AM</div>
+                </aside>
+                <aside class="flex justify-between p-[24px] items-center w-[380px] h-[105px] bg-[#FAFAFA] mx-auto rounded-[8px] mb-[8px]">
+                    <div class="">
+                        <h1 class="inter font-semibold text-[18px]">National Emergency<br>Number</h1>
+                        <p class="hind-madurai-light font-medium text-[18px] text-[#5C5C5C]">1994-999999</p>
+                    </div>
+                    <div class="hind-madurai-light font-medium text-[18px] inline-block">11:36:58 AM</div>
+                </aside>
+                <aside class="flex justify-between p-[24px] items-center w-[380px] h-[83px] bg-[#FAFAFA] mx-auto rounded-[8px] mb-[8px]">
+                    <div class="">
+                        <h1 class="inter font-semibold text-[18px]">Fire Service Number</h1>
+                        <p class="hind-madurai-light font-medium text-[18px] text-[#5C5C5C]">999</p>
+                    </div>
+                    <div class="hind-madurai-light font-medium text-[18px]">11:36:58 AM</div>
+                </aside>
+                <aside class="flex justify-between p-[24px] items-center w-[380px] h-[105px] bg-[#FAFAFA] mx-auto rounded-[8px] mb-[8px]">
+                    <div class="">
+                        <h1 class="inter font-semibold text-[18px]">Bangladesh Railway<br>Helpline</h1>
+                        <p class="hind-madurai-light font-medium text-[18px] text-[#5C5C5C]">999</p>
+                    </div>
+                    <div class="hind-madurai-light font-medium text-[18px]">11:36:58 AM</div>
+                </aside>
+                <aside class="flex justify-between p-[24px] items-center w-[380px] h-[83px] bg-[#FAFAFA] mx-auto rounded-[8px] mb-[8px]">
+                    <div class="">
+                        <h1 class="inter font-semibold text-[18px]">Fire Service Number</h1>
+                        <p class="hind-madurai-light font-medium text-[18px] text-[#5C5C5C]">999</p>
+                    </div>
+                    <div class="hind-madurai-light font-medium text-[18px]">11:36:58 AM</div>
+                </aside>
+                <aside class="flex justify-between p-[24px] items-center w-[380px] h-[83px] bg-[#FAFAFA] mx-auto rounded-[8px]">
+                    <div class="">
+                        <h1 class="inter font-semibold text-[18px]">Anti-Corruption Helpline</h1>
+                        <p class="hind-madurai-light font-medium text-[18px] text-[#5C5C5C]">999</p>
+                    </div>
+                    <div class="hind-madurai-light font-medium text-[18px]">11:36:58 AM</div>
+                </aside>
+            </section>
+        </aside>
     </main>
     <footer>
 
     </footer>
+    <!-- JavaScript SRC -->
     <script src="./javascript/script.js"></script>
 </body>
+
 
 </html>
