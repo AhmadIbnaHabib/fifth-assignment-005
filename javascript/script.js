@@ -64,7 +64,7 @@ callButtons.forEach(function (btn) {
       aside.className = 'history-card flex justify-between p-[24px] items-center w-[380px] h-[83px] bg-[#FAFAFA] mx-auto rounded-[8px] mb-[8px]';
       aside.innerHTML = `
         <div>
-            <h1 class="inter font-semibold text-[18px]">${serviceName}</h1>
+            <h1 class="inter font-semibold text-[18px] <br>">${serviceName}</h1>
             <p class="hind-madurai-light font-medium text-[18px] text-[#5C5C5C]">${number}</p>
         </div>
         <div class="hind-madurai-light font-medium text-[18px]">${new Date().toLocaleTimeString()}</div>

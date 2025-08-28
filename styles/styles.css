@@ -25,7 +25,11 @@
       margin-bottom: 30px;
     }
     .banner-h{
-      font-size:34px;
+      font-size:25px;
+    }
+
+    .banner-p{
+      font-size: 15px;
     }
     .card {
         width: 400px;
