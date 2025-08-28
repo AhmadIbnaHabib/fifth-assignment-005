@@ -18,22 +18,22 @@ callBtn.forEach(function (btn) {
 })
 
 let callButton = document.querySelectorAll('.emergency-call');
-let starButton = document.getElementById('balance')
+let coinButton = document.getElementById('balance')
 
-let stars = 100;
-let starNegative = 20;
+let coin = 100;
+let coinNegative = 20;
 
 callButton.forEach(function (btn) {
   btn.onclick = function () {
-    if (stars > 0) {
+    if (coin > 0) {
       let serviceName = btn.getAttribute('data-service');
       let number = btn.getAttribute('data-number');
-      stars -= starNegative;
-      if (stars < 0) stars = 0;
-      starButton.innerText = + stars;
-      alert('service :' + serviceName + '\nNumber :' + number);
+      coin -= coinNegative;
+      if (coin < 0) coin = 0;
+      coinButton.innerText = + coin;
+      alert('' + serviceName + '' + number);
     } else {
-      alert('⚠️ You don\'t have any ⭐ left! You cannot make more calls.')
+      alert('⚠️ You don\'t have any coins left! You cannot make more calls.')
     }
   }
 })
@@ -41,24 +41,24 @@ callButton.forEach(function (btn) {
 
 
 let callButtons = document.querySelectorAll('.emergency-call');
-let starBtn = document.getElementById('balance');
+let coinBtn = document.getElementById('balance');
 let historyCards = document.getElementById('history-cards');
 let clearButton = document.getElementById('clear-history');
 
-let star = 100;
-let starNegativeSecond = 20;
+let coinB = 100;
+let coinNegativeSecond = 20;
 
 callButtons.forEach(function (btn) {
   btn.onclick = function () {
-    if (star > 0) {
+    if (coin > 0) {
       let serviceName = btn.getAttribute('data-service');
       let number = btn.getAttribute('data-number');
 
-      star -= starNegativeSecond;
-      if (star < 0) star = 0;
-      starBtn.innerText = star;
+      coin -= coinNegativeSecond;
+      if (coin < 0) coin = 0;
+      coinBtn.innerText = coin;
 
-      alert('Service : ' + serviceName + '\nNumber : ' + number);
+      alert('📞' + serviceName + '' + number);
 
       let aside = document.createElement('aside');
       aside.className = 'history-card flex justify-between p-[24px] items-center w-[380px] h-[83px] bg-[#FAFAFA] mx-auto rounded-[8px] mb-[8px]';
@@ -73,7 +73,7 @@ callButtons.forEach(function (btn) {
       historyCards.appendChild(aside);
 
     } else {
-      alert("⚠️ You don't have any ⭐ left! You cannot make more calls.");
+      alert("⚠️ You don't have any coins left! You cannot make more calls.");
     }
   }
 });
