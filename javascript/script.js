@@ -58,7 +58,7 @@ callButtons.forEach(function (btn) {
       if (star < 0) star = 0;
       starBtn.innerText = star;
 
-      alert('Service: ' + serviceName + '\nNumber: ' + number);
+      alert('Service : ' + serviceName + '\nNumber : ' + number);
 
       let aside = document.createElement('aside');
       aside.className = 'history-card flex justify-between p-[24px] items-center w-[380px] h-[83px] bg-[#FAFAFA] mx-auto rounded-[8px] mb-[8px]';
@@ -81,6 +81,26 @@ callButtons.forEach(function (btn) {
 clearButton.onclick = function () {
   historyCards.innerHTML = '';
 };
+
+
+let copyCount = document.getElementById('copy-count');
+let countNumber = 0;
+let copyButtons = document.querySelectorAll('.copy-btn');
+
+copyButtons.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+
+    let number = btn.closest('.card').querySelector('.copy-number').innerText;
+
+    navigator.clipboard.writeText(number).then(() => {
+
+    });
+
+    countNumber++;
+    copyCount.innerText = countNumber;
+  });
+});
+
 
 
 
