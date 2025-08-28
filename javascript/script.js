@@ -1,6 +1,8 @@
 let count = 0;
+
 let heartBtn = document.querySelectorAll('.click-heart');
 let countHeart = document.getElementById('count-heart');
+
 heartBtn.forEach(function (button) {
   button.onclick = function () {
     count++
@@ -9,6 +11,7 @@ heartBtn.forEach(function (button) {
 })
 
 let callBtn = document.querySelectorAll('.emergency-call');
+
 callBtn.forEach(function (btn) {
   btn.onclick = function () {
     let serviceName = btn.getAttribute('data-service');
@@ -39,14 +42,13 @@ callButton.forEach(function (btn) {
 })
 
 
+let coinB = 100;
+let coinNegativeSecond = 20;
 
 let callButtons = document.querySelectorAll('.emergency-call');
 let coinBtn = document.getElementById('balance');
 let historyCards = document.getElementById('history-cards');
 let clearButton = document.getElementById('clear-history');
-
-let coinB = 100;
-let coinNegativeSecond = 20;
 
 callButtons.forEach(function (btn) {
   btn.onclick = function () {
@@ -58,7 +60,7 @@ callButtons.forEach(function (btn) {
       if (coin < 0) coin = 0;
       coinBtn.innerText = coin;
 
-      alert('📞' + serviceName + '' + number);
+      alert('📞Calling' + serviceName + '' + number);
 
       let aside = document.createElement('aside');
       aside.className = 'history-card flex justify-between p-[24px] items-center w-[380px] h-[83px] bg-[#FAFAFA] mx-auto rounded-[8px] mb-[8px]';
@@ -69,7 +71,6 @@ callButtons.forEach(function (btn) {
         </div>
         <div class="hind-madurai-light font-medium text-[18px]">${new Date().toLocaleTimeString()}</div>
       `;
-
       historyCards.appendChild(aside);
 
     } else {
@@ -77,18 +78,16 @@ callButtons.forEach(function (btn) {
     }
   }
 });
-
 clearButton.onclick = function () {
   historyCards.innerHTML = '';
 };
 
-
-let copyCount = document.getElementById('copy-count');
 let countNumber = 0;
+let copyCount = document.getElementById('copy-count');
 let copyButtons = document.querySelectorAll('.copy-btn');
 
-copyButtons.forEach(function(btn) {
-  btn.addEventListener('click', function() {
+copyButtons.forEach(function (btn) {
+  btn.addEventListener('click', function () {
 
     let number = btn.closest('.card').querySelector('.copy-number').innerText;
 
