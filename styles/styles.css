@@ -24,6 +24,9 @@
     .nav-banner{ 
       margin-bottom: 30px;
     }
+    .banner-h{
+      font-size:34px;
+    }
     .card {
         width: 400px;
         margin: 0 auto;
@@ -39,10 +42,11 @@
     .by{
       margin-top: 30px;
       height: 100px;
+      padding-right: 3px;
     }
     .name{
       font-size: 14px;
-      padding-right: 5px;
+      
     }
     .pipe{
       display: none;
